@@ -1,0 +1,31 @@
+ Test Your Dummy Payment Portal Locally
+Run the server in the terminal:
+
+bash
+
+node server.js
+
+Test the endpoints: You can use Postman or cURL to test the payment endpoint:
+
+bash
+Copy code
+curl -X POST http://localhost:3000/pay -H "Content-Type: application/json" -d '{"amount": 500, "paymentMethod": "Credit Card"}'
+This should return a payment success response:
+json
+Copy code
+{
+    "success": true,
+    "message": "Payment successful",
+    "amount": 500
+}
+
+
+node server.js
+If you send a request with an amount greater than 1000, it will return payment failure:
+json
+Copy code
+{
+    "success": false,
+    "message": "Payment failed",
+    "amount": 1500
+}
