@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Museum Ticket Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Museum Ticket Booking</h1>
+    <h3>Book your ticket in 3 simple steps:</h3>
+
+    <div id="chat-box">
+        <div class="message bot-message">Welcome to the ticket booking system!</div>
+        <div class="message bot-message">Please select the museum you would like to book tickets for:</div>
+
+        <div class="ticket-type-options">
+            <div class="ticket-type-option" id="shivaji">Shivaji Maharaj Museum</div>
+            <div class="ticket-type-option" id="national">National Museum</div>
+            <div class="ticket-type-option" id="indian">Indian Museum</div>
+        </div>
+
+        <div id="visitor-info" style="display: none;"></div>
+        <div id="addon-info" style="display: none;"></div>
+        <div id="total-section" style="display: none;">
+            <h3>Total Amount: <span id="total-amount">0</span> INR</h3>
+        </div>
+        <div id="summary-section" style="display: none;">
+            <h3>Summary of your selections:</h3>
+            <p id="summary-details"></p>
+            <label>
+                <input type="checkbox" id="agree-terms"> I agree to the terms and conditions.
+            </label>
+            <button id="proceed-to-payment" style="display: none;">Proceed to Payment</button>
+            <button id="back-button" style="display: none;">Go Back</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

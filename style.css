@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1, h3 {
+    text-align: center;
+}
+
+#chat-box {
+    width: 600px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+.message {
+    margin-bottom: 10px;
+}
+
+.ticket-type-options {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0;
+}
+
+.ticket-type-option {
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.ticket-type-option:hover {
+    background-color: #f0f0f0;
+}
+
+.visitor-selection, .addon-selection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#total-section, #summary-section {
+    text-align: center;
+    margin-top: 20px;
+}
